@@ -1,0 +1,64 @@
+color {
+  color: #116466, #2c3531, #d9b080, #ffcb9a, #d1e8e2;
+}
+colors {
+  color: #f7768e, #ff9e64, #e0af68, #9ece6a, #73daca, #b4f9f8, #2ac3de, #7aa2f7,
+    #bb9af7, #c0caf5, #a9b1d6, #9aa5ce, #565f89, #414868, #24283b, #1a1b26;
+}
+
+body {
+  background-image: url("./../1936421.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+}
+
+.here3 {
+  color: black;
+  text-shadow: 1px 1px 2px #9ece6a, 0 0 25px #2ac3de, 0 0 5px #f7768e;
+}
+
+.neon {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0%;
+  font-size: 6em;
+  color: #fff;
+  /* text-shadow: 0 0 20px #ff005b; */
+  text-shadow: 0 0 20px #2ac3de;
+  text-align: center;
+}
+
+.neon:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  /* color: #ff005b; */
+  color: #2ac3de;
+  filter: blur(15px);
+}
+
+.neon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #fe3a80; */
+  background: #2ac3de;
+  z-index: -2;
+  opacity: 0.3;
+  filter: blur(100px);
+}
